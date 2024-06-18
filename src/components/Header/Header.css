@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header-title {
+  font-family: 'Cabin Sketch';
+  font-weight: 700;
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.header-title a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  width: 50%;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  font-size: calc(0.5rem + 0.8vw);
+  padding: 15px;
+}
+
+.nav a {
+  cursor: pointer;
+  color: #06011d;
+  font-weight: 800;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav a:after {
+  background-color: #082ebd;
+  bottom: -5px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: width .5s ease-out;
+  width: 0;
+}
+
+.nav a.active,
+.nav a:hover {
+  text-decoration: underline;
+  background-color: #082ebd;
+  bottom: -5px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: width 0.5s ease-out;
+  width: 0;
+}
+
+.nav ul {
+  display: flex;
+  width: 50%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.nav li {
+  margin: 0;
+  list-style-type: none;
+}

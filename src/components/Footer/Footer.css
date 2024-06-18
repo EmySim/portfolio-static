@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  height: 120px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.footer-title {
+  font-family: 'Cabin Sketch';
+  font-weight: 700;
+  font-size: 50px;
+}
+
+img {
+  width: 35px;
+  height: 35px;
+}
+
+.icones-footer {
+  display: flex;
+  gap: 40px;
+}

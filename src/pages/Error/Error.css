@@ -1,0 +1,50 @@
+#section-principale-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#section-principale-404 h1 {
+  color: orangered;
+  font-weight: 700;
+  line-height: 142.6%;
+  margin: 139px 0;
+}
+#section-principale-404 p {
+  color: orangered;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin: 0 0 139px;
+}
+#section-principale-404 a {
+  color: orangered;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin: 0 0 139px;
+}
+
+@media (max-width: 576px) {
+  #section-principale-404 h1 {
+    font-size: 96px;
+  }
+  #section-principale-404 p {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    align-items: center;
+  }
+  #section-principale-404 a {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  #section-principale-404 h1 {
+    font-size: 288px;
+  }
+  #section-principale-404 p {
+    display: block;
+    font-size: 36px;
+  }
+  #section-principale-404 a {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=Error.css.map */

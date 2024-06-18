@@ -1,0 +1,45 @@
+[
+  {
+    "id": "6",
+    "title": "Booki",
+    "description": "J'ai intégré l'interface du site à l'aide de HTML et CSS, en collaboration avec Sarah, la CTO, et Loïc, l'UI designer. J'ai travaillé sur des maquettes complètes pour les versions desktop, tablette et mobile, en respectant les spécifications et contraintes techniques.",
+    "tags": ["HTLM", "CSS", "Figma", "Github"],
+    "picture": "booki",
+    "gitlink": "https://github.com/EmySim/booki.git",
+    "projectlink": "https://emysim.github.io/booki/"
+    
+  },
+  {
+    "id": "7",
+    "title": "Sophie Bluel",
+    "description": "j'ai contribué à la conception du site portfolio de Sophie Bluel, architecte d'intérieur. Mon rôle en tant que développeuse front-end a impliqué la création de la page de présentation, de la page de connexion de l'administrateur, et d'une modale d'upload de médias.",
+    "tags": ["HTLM", "CSS", "JS", "Swagger"],
+    "picture": "sophie",
+    "gitlink": "https://github.com/EmySim/sophie-bluel.git"
+  },
+  {
+    "id": "8",
+    "title": "Nina Carducci",
+    "description": "J'ai proposé mes services pour l'optimisation SEO et le debuggage du site de Nina Carducci, photographe. Après avoir effectué un audit de son site, j'ai identifié des problèmes de vitesse de chargement et de structure. J'ai proposé de résoudre ces problèmes en optimisant les images et le code du site. Mon objectif était d'améliorer son référencement et d'augmenter sa visibilité.",
+    "tags": ["SEO", "Lighthouse", "Wave", "Accessibilité"],
+    "picture": "nina",
+    "gitlink": "https://github.com/EmySim/nina-carducci.git",
+    "projectlink": "https://emysim.github.io/nina-carducci/"
+  },
+  {
+    "id": "9",
+    "title": "Kasa",
+    "description": "J'ai travaillé avec Kasa, un leader de la location d'appartements entre particuliers en France. J'ai pris en charge la refonte totale de leur site web en utilisant React. Malgré l'absence temporaire du back-end, j'ai réussi à développer l'ensemble de l'application, les composants React, et les routes React Router en mobile first.",
+    "tags": ["React", "Sass"],
+    "picture": "kasa",
+    "gitlink": "https://github.com/EmySim/kasa.git"
+  },
+  {
+    "id": "10",
+    "title": "Mon Vieux Grimoire",
+    "description": "Back-end Api Restful authentification et notation.",
+    "tags": ["NodeJS", "MongoDB", "Express"],
+    "picture": "grimoire",
+    "gitlink": "https://github.com/EmySim/vieux-grimoire.git"
+  }
+]

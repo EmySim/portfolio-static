@@ -1,0 +1,1 @@
+export { default as banner1 } from './banner1.webp';

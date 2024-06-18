@@ -1,0 +1,56 @@
+{
+  "techno": [
+    {
+      "name": "HTML5",
+      "picture": "IconeHTML"
+    },
+    {
+      "name": "CSS3",
+      "picture": "IconeCSS"
+    },
+    {
+      "name": "JS",
+      "picture": "IconeJS"
+    },
+    {
+      "name": "React",
+      "picture": "IconeReact"
+    },
+    {
+      "name": "Github",
+      "picture": "IconeGithub"
+    },
+    {
+      "name": "NodeJS",
+      "picture": "IconeNodeJS"
+    },
+    {
+      "name": "MongoDB",
+      "picture": "IconeMongoDB"
+    },
+    {
+      "name": "Express",
+      "picture": "IconeExpress"
+    },
+    {
+      "name": "Postman",
+      "picture": "IconePostman"
+    },
+    {
+      "name": "Swagger",
+      "picture": "IconeSwagger"
+    },
+    {
+      "name": "Figma",
+      "picture": "IconeFigma"
+    },
+    {
+      "name": "Sass",
+      "picture": "IconeSass"
+    },
+    {
+      "name": "Jira",
+      "picture": "IconeJira"
+    }
+  ]
+}

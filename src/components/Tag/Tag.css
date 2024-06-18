@@ -1,0 +1,17 @@
+.tag-item {
+    display: flex;
+    width: auto;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    margin-top: 10px;
+    border: 2px solid #082ebd;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px;
+
+  }
+
