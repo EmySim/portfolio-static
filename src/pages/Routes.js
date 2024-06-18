@@ -6,7 +6,7 @@ import ScrollTop from '../components/Scrolltop.jsx';
 const routes = [
   
   {
-    path: "/portfolio-front",
+    path: "/portfolio",
     element: (
       <>
         <ScrollTop />
