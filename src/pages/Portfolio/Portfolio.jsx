@@ -5,7 +5,7 @@ import Header from "../../components/Header/Header.jsx";
 import Banner from "../../components/Banner/Banner.jsx";
 import Sticker from "../../components/Sticker/Sticker.jsx";
 import Card from "../../components/Card/Card.jsx";
-import ContactForm from "../../components/Form/Form.jsx";
+import Email from "../../components/Email/Email.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 //data json
 import projetsData from "../../data/projets.json";
@@ -48,18 +48,16 @@ const Portfolio = () => {
       />
 
       <div className="main-container">
-      <Banner pageTitle="Portfolio" />
+        <Banner pageTitle="Portfolio" />
 
         <div className="profil-container" ref={aboutRef} id="About">
           <h2>A propos de moi</h2>
           <div className="profil-content">
             <div className="about-container">
-            <div className="profil-description">
+              <div className="profil-description">
                 {profilData[0] && profilData[0].description ? (
                   profilData[0].description.map((line, index) => (
-                    <p key={index}>
-                      {formatDescription(line)}
-                    </p>
+                    <p key={index}>{formatDescription(line)}</p>
                   ))
                 ) : (
                   <p>No description available</p>
@@ -112,7 +110,7 @@ const Portfolio = () => {
               <div className="form-background">
                 <img src={imageForm} alt="Ordinateur" />
                 <div className="form-overlay">
-                  <ContactForm />
+                  <Email />
                 </div>
               </div>
             </div>

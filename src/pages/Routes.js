@@ -10,7 +10,7 @@ const routes = [
     element: <Navigate to="/portfolio" replace />
   },
   {
-    path: "/portfolio",
+    path: "//portfolio",
     element: (
       <>
         <ScrollTop />
