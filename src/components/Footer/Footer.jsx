@@ -8,7 +8,6 @@ const Footer = () => {
   return (
     <div className="footer">
       <p className="footer-title">Emilie Simson</p>
-      <p >Merci de votre visite 😊 </p>
       <div className="icones-footer">
         <NavLink to="https://github.com/EmySim">
           <img src={gitsocial} alt="GitHub" />

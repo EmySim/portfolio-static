@@ -34,8 +34,9 @@ const ContactForm = () => {
     setError("");
 
     try {
-      const response = await axios.post("/api/contact", formData);
-      console.log("Response:", response.data);
+      console.log("Envoi des données du formulaire:", formData); 
+      const response = await axios.post("http://localhost:5000/api/contact", formData);
+      console.log("•͡˘㇁•͡˘Response du serveur:", response.data);
 
       // Réinitialisation des champs du formulaire après une soumission réussie
       setFormData({
@@ -43,9 +44,10 @@ const ContactForm = () => {
         email: "",
         message: "",
       });
+      alert("Formulaire envoyé avec succès!");
     } catch (error) {
-      console.error("Error:", error);
-      setError("Une erreur s'est produite lors de l'envoi du formulaire");
+      console.error("ʕ·͡ᴥ·ʔ﻿Error:", error);
+      setError(error.response?.data?.message || "Une erreur s'est produite lors de l'envoi du formulaire");
     }
   };
 

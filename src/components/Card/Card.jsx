@@ -1,15 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Card.css";
 import Tag from "../Tag/Tag";
 import { NavLink } from "react-router-dom";
-import {
-  booki,
-  sophie,
-  nina,
-  kasa,
-  grimoire,
-  defaut,
-} from "../../assets/realisations";
+import images from "../../assets/realisations";
 
 function Card({
   id,
@@ -20,38 +13,33 @@ function Card({
   gitlink,
   projectlink,
 }) {
-  const getImageSource = (picture) => {
-    switch (picture) {
-      case "booki":
-        return booki;
-      case "sophie":
-        return sophie;
-      case "nina":
-        return nina;
-      case "kasa":
-        return kasa;
-      case "grimoire":
-        return grimoire;
-      default:
-        return defaut;
-    }
-  };
+  const [imageSrc, setImageSrc] = useState(null);
+
+  useEffect(() => {
+    const loadImage = async () => {
+      const imageModule = await images[picture]?.() || images.default();
+      setImageSrc(imageModule.default);
+    };
+    loadImage();
+  }, [picture]);
 
   return (
     <div className="card">
       <div className="image-container">
-        <img
-          src={getImageSource(picture)}
-          alt={title}
-          className="project-image"
-        />
-<h3 className="title-overlay">{title}</h3>
+        {imageSrc && (
+          <img
+            src={imageSrc}
+            alt={title}
+            className="project-image"
+            loading="lazy"  // Utilisation de l'attribut lazy pour améliorer la performance
+          />
+        )}
+        <h3 className="title-overlay">{title}</h3>
         <div className="overlay">
           <p className="description">{description}</p>
           <div className="tag-container">
             <Tag tags={tags} />
           </div>
-
           <div className="link-container">
             <button className="button-link">
               <NavLink to={gitlink}>Voir le code sur GitHub</NavLink>

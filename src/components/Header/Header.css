@@ -3,6 +3,11 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%; /* Assurez-vous que le header prend toute la largeur de la page */
+  background-color: white; /* Pour éviter que le contenu derrière soit visible */
+  z-index: 1000;
 }
 
 .header-title {

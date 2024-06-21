@@ -37,7 +37,7 @@ function Banner({ picture = banner1, pageTitle }) {
 
   return (
     <div className="banner">
-      {picture && <img src={picture} alt="banner" />}
+      {picture && <img src={picture} alt="banner" loading="lazy" />}
       <div className="banner-textcontainer">
         {bannerText}
       </div>

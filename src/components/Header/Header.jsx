@@ -10,10 +10,15 @@ function Header({ aboutRef, stackRef, realisationsRef, contactRef, showMenu = tr
     }
   };
 
+  const handleTitleClick = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="header">
       <h1 className="header-title">
-        <Link to="/Portfolio">Emilie Simson</Link>
+      <Link to="/Portfolio" onClick={handleTitleClick}>Emilie Simson</Link>
       </h1>
       {showMenu && (
         <nav className="nav">

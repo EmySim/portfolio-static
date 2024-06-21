@@ -21,7 +21,7 @@
     "id": "8",
     "title": "Nina Carducci",
     "description": "J'ai proposé mes services pour l'optimisation SEO et le debuggage du site de Nina Carducci, photographe. Après avoir effectué un audit de son site, j'ai identifié des problèmes de vitesse de chargement et de structure. J'ai proposé de résoudre ces problèmes en optimisant les images et le code du site. Mon objectif était d'améliorer son référencement et d'augmenter sa visibilité.",
-    "tags": ["SEO", "Lighthouse", "Wave", "Accessibilité"],
+    "tags": ["SEO", "Lighthouse", "Wave"],
     "picture": "nina",
     "gitlink": "https://github.com/EmySim/nina-carducci.git",
     "projectlink": "https://emysim.github.io/nina-carducci/"
@@ -30,7 +30,7 @@
     "id": "9",
     "title": "Kasa",
     "description": "J'ai travaillé avec Kasa, un leader de la location d'appartements entre particuliers en France. J'ai pris en charge la refonte totale de leur site web en utilisant React. Malgré l'absence temporaire du back-end, j'ai réussi à développer l'ensemble de l'application, les composants React, et les routes React Router en mobile first.",
-    "tags": ["React", "Sass"],
+    "tags": ["React", "Sass", "Mobile First"],
     "picture": "kasa",
     "gitlink": "https://github.com/EmySim/kasa.git"
   },
@@ -40,6 +40,14 @@
     "description": "Back-end Api Restful authentification et notation.",
     "tags": ["NodeJS", "MongoDB", "Express"],
     "picture": "grimoire",
+    "gitlink": "https://github.com/EmySim/vieux-grimoire.git"
+  },
+  {
+    "id": "11",
+    "title": "Portfolio",
+    "description": "Mise en place d'un site web .",
+    "tags": ["Front-End", "Back-End", "Déploiement"],
+    "picture": "portfolio",
     "gitlink": "https://github.com/EmySim/vieux-grimoire.git"
   }
 ]

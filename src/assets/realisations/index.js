@@ -1,6 +1,12 @@
-export { default as booki } from './bookiimg.jpg';
-export { default as sophie } from './sophiebluelimg.png';
-export { default as nina } from './ninaimg.webp';
-export { default as kasa } from './kasaimg.jpeg';
-export { default as grimoire } from './grimoireimg.png';
-export { default as defaut } from './default.png'
+const images = {
+    booki: () => import('./bookiimg.jpg'),
+    sophie: () => import('./sophiebluelimg.png'),
+    nina: () => import('./ninaimg.webp'),
+    kasa: () => import('./kasaimg.jpeg'),
+    grimoire: () => import('./grimoireimg.png'),
+    portfolio: () => import('./portfolio.png'),
+    default: () => import('./default.png'),
+  };
+  
+  export default images;
+  
