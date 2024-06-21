@@ -7,10 +7,10 @@ import ScrollTop from '../components/Scrolltop.jsx';
 const routes = [
   {
     path: "/",
-    element: <Navigate to="/portfolio" replace />
+    element: <Navigate to="/portfolio-static" replace />
   },
   {
-    path: "//portfolio",
+    path: "/portfolio-static",
     element: (
       <>
         <ScrollTop />
