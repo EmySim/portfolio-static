@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "./static/css/main.34c2a7b1.css",
+    "main.js": "./static/js/main.611f6588.js",
+    "static/js/858.ba2d5b02.chunk.js": "./static/js/858.ba2d5b02.chunk.js",
+    "static/js/486.ce99a0d4.chunk.js": "./static/js/486.ce99a0d4.chunk.js",
+    "static/js/96.30c56bcd.chunk.js": "./static/js/96.30c56bcd.chunk.js",
+    "static/js/323.31e3686e.chunk.js": "./static/js/323.31e3686e.chunk.js",
+    "static/js/296.d56d8bc7.chunk.js": "./static/js/296.d56d8bc7.chunk.js",
+    "static/js/239.0c7ad051.chunk.js": "./static/js/239.0c7ad051.chunk.js",
+    "static/js/432.6fb4c423.chunk.js": "./static/js/432.6fb4c423.chunk.js",
+    "static/media/kasaimg.jpeg": "./static/media/kasaimg.9bb7b1427ea2dc44a05d.jpeg",
+    "static/media/sophiebluelimg.png": "./static/media/sophiebluelimg.194031ed94e4b950ae84.png",
+    "static/media/imageabout.jpg": "./static/media/imageabout.221b6f03976f96cfbd0e.jpg",
+    "static/media/grimoireimg.png": "./static/media/grimoireimg.f0aec92a2dde895664ec.png",
+    "static/media/portfolio.png": "./static/media/portfolio.660b64d865cfdd254ec6.png",
+    "static/media/cabin-sketch-latin-400-normal.woff": "./static/media/cabin-sketch-latin-400-normal.26e2e786b1efe9faffd7.woff",
+    "static/media/cabin-sketch-latin-400-normal.woff2": "./static/media/cabin-sketch-latin-400-normal.ef49acb71f5ce35ab1c4.woff2",
+    "static/media/imageform.jpg": "./static/media/imageform.d3a8822b0abf09383aa2.jpg",
+    "static/media/ninaimg.webp": "./static/media/ninaimg.fbab3aedf49eb5df0ab9.webp",
+    "static/media/mongodbicon.png": "./static/media/mongodbicon.4a0fd354ac26cad8cba0.png",
+    "static/media/postmanicon.png": "./static/media/postmanicon.799185cc85a43ce46242.png",
+    "static/media/jiraicon.png": "./static/media/jiraicon.0680cd27245042af8a0a.png",
+    "static/media/swaggericon.png": "./static/media/swaggericon.b94b1ca143538c2c1d60.png",
+    "static/media/nodejsicon.png": "./static/media/nodejsicon.57f1722aa0d5af76c735.png",
+    "static/media/linkedinsocial.png": "./static/media/linkedinsocial.45403bbe97c75d160afc.png",
+    "static/media/bookiimg.jpg": "./static/media/bookiimg.247738d5b98d742c96af.jpg",
+    "static/media/reacticon.png": "./static/media/reacticon.3b5049ea7908e9da3ba0.png",
+    "static/media/sassicon.png": "./static/media/sassicon.b4856dfeb58fd76614f8.png",
+    "static/media/cssicon .png": "./static/media/cssicon .9ffc6994f64309a89fa4.png",
+    "static/media/banner1.webp": "./static/media/banner1.7e6a4546b30615770e82.webp",
+    "static/media/figmaicon.png": "./static/media/figmaicon.9abb5af3c700da970cd3.png",
+    "static/media/jsicon.png": "./static/media/jsicon.ae35ab7f9b8e48760129.png",
+    "static/media/gitsocial.png": "./static/media/gitsocial.be8bc2e0b360721a6996.png",
+    "index.html": "./index.html",
+    "main.34c2a7b1.css.map": "./static/css/main.34c2a7b1.css.map",
+    "main.611f6588.js.map": "./static/js/main.611f6588.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34c2a7b1.css",
+    "static/js/main.611f6588.js"
+  ]
+}

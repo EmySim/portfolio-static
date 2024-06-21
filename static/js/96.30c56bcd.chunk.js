@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[96],{96:(e,a,p)=>{e.exports=p.p+"static/media/ninaimg.fbab3aedf49eb5df0ab9.webp"}}]);
