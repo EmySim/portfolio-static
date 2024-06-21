@@ -46,8 +46,8 @@
     "id": "11",
     "title": "Portfolio",
     "description": "Mise en place d'un site web .",
-    "tags": ["Front-End", "Back-End", "Déploiement"],
+    "tags": ["Front-End", "Déploiement", "Responsive"],
     "picture": "portfolio",
-    "gitlink": "https://github.com/EmySim/vieux-grimoire.git"
+    "gitlink": "https://github.com/EmySim/portfolio-static.git"
   }
 ]

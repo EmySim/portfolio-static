@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Card.css";
 import Tag from "../Tag/Tag";
-import { NavLink } from "react-router-dom";
 import images from "../../assets/realisations";
 
 function Card({
@@ -42,10 +41,16 @@ function Card({
           </div>
           <div className="link-container">
             <button className="button-link">
-              <NavLink to={gitlink}>Voir le code sur GitHub</NavLink>
+              <a href={gitlink} target="_blank" rel="noopener noreferrer">
+                Voir le code sur GitHub
+              </a>
             </button>
             <button className="button-link">
-              {projectlink && <NavLink to={projectlink}>Voir le site</NavLink>}
+              {projectlink && (
+                <a href={projectlink} target="_blank" rel="noopener noreferrer">
+                  Voir le site
+                </a>
+              )}
             </button>
           </div>
         </div>

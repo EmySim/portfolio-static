@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./Email.css";
 import { useForm, ValidationError } from "@formspree/react";
+import config from "../../config";
+
 
 function EmailForm() {
-  const [state, handleSubmit] = useForm("xdknnael");
+  const [state, handleSubmit] = useForm(config.formspreeId);
   const [formValues, setFormValues] = useState({
     email: "",
     message: "",
@@ -36,9 +38,9 @@ function EmailForm() {
     }
 
     if (!validateEmail(formValues.email)) {
-        setError("Veuillez entrer une adresse email valide");
-        return;
-      }
+      setError("Veuillez entrer une adresse email valide");
+      return;
+    }
 
     setError(""); // Réinitialiser les erreurs
 
@@ -55,15 +57,24 @@ function EmailForm() {
       }
     } catch (error) {
       console.error("ʕ·͡ᴥ·ʔ﻿Error:", error);
-      setError(error.response?.data?.message || "Une erreur s'est produite lors de l'envoi du message");
+      setError(
+        error.response?.data?.message ||
+          "Une erreur s'est produite lors de l'envoi du message"
+      );
     }
   };
 
+  // Afficher le message de confirmation après soumission réussie
+  if (state.succeeded) {
+    return <p>Votre message a bien été envoyé!</p>;
+  }
+
+  // Afficher le formulaire tant que la soumission n'a pas réussi
   return (
     <form onSubmit={handleFormSubmit}>
       {error && <div className="error">{error}</div>}
       <div>
-        <label htmlFor="email">Entrez votre Adresse Email</label>
+        <label htmlFor="email">Entrez votre adresse email</label>
       </div>
 
       <div className="email">
@@ -78,7 +89,7 @@ function EmailForm() {
       </div>
 
       <div>
-        <label htmlFor="message">Adressez moi un message.</label>
+        <label htmlFor="message">Adressez moi un message</label>
         <textarea
           id="message"
           name="message"
@@ -96,7 +107,6 @@ function EmailForm() {
         <button type="submit" disabled={state.submitting}>
           Envoyez
         </button>
-        {state.succeeded && <p>Votre message a bien été envoyé.</p>}
       </div>
     </form>
   );
