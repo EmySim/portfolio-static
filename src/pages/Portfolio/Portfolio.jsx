@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./Portfolio.css";
-import { gitsocial, linkedinsocial } from '../../assets/reseau'; 
+
 //composants
 import Header from "../../components/Header/Header.jsx";
 import Banner from "../../components/Banner/Banner.jsx";
@@ -107,14 +107,7 @@ const Portfolio = () => {
               
               <div className="form-background">
                 <img src={imageForm} alt="Ordinateur" />
-                <div className="icones-reseaux">
-                <a href="https://github.com/EmySim" target="_blank" rel="noopener noreferrer">
-                  <img src={gitsocial} alt="GitHub" />
-                </a>
-                <a href="https://www.linkedin.com/in/emiliesimson/" target="_blank" rel="noopener noreferrer">
-                  <img src={linkedinsocial} alt="LinkedIn" />
-                </a>
-              </div>
+                
                 <div className="form-overlay">
                   <Email />
                 </div>

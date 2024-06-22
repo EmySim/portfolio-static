@@ -25,25 +25,28 @@ function Card({ id, title, picture, description, tags = [], gitlink, projectlink
             loading="lazy"
           />
         )}
+         <h3 className="title-overlay">{title}</h3>
         <div className="overlay">
-          <h3 className="title-overlay">{title}</h3>
-          <p className="description">{description}</p>
-          <div className="tag-container">
-            <Tag tags={tags} />
-          </div>
-          <div className="link-container">
-            <button className="button-link">
-              <a href={gitlink} target="_blank" rel="noopener noreferrer">
-                Voir le code sur GitHub
-              </a>
-            </button>
-            {projectlink && (
+         
+          <div className="overlay-content">
+            <p className="description">{description}</p>
+            <div className="tag-container">
+              <Tag tags={tags} />
+            </div>
+            <div className="link-container">
               <button className="button-link">
-                <a href={projectlink} target="_blank" rel="noopener noreferrer">
-                  Voir le site
+                <a href={gitlink} target="_blank" rel="noopener noreferrer">
+                  Voir GitHub
                 </a>
               </button>
-            )}
+              {projectlink && (
+                <button className="button-link">
+                  <a href={projectlink} target="_blank" rel="noopener noreferrer">
+                    Voir le site
+                  </a>
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -52,3 +55,4 @@ function Card({ id, title, picture, description, tags = [], gitlink, projectlink
 }
 
 export default Card;
+

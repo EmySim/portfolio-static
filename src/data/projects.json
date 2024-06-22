@@ -29,7 +29,7 @@
   {
     "id": "9",
     "title": "Kasa",
-    "description": "J'ai travaillé avec Kasa, un leader de la location d'appartements entre particuliers en France. J'ai pris en charge la refonte totale de leur site web en utilisant React. Malgré l'absence temporaire du back-end, j'ai réussi à développer l'ensemble de l'application, les composants React, et les routes React Router en mobile first.",
+    "description": "Pour Kasa, un leader de la location d'appartements entre particuliers en France, j'ai pris en charge la refonte totale de leur site web en utilisant React. Malgré l'absence temporaire du back-end, j'ai réussi à développer l'ensemble de l'application, les composants React, et les routes React Router en mobile first.",
     "tags": ["React", "Sass", "Mobile First"],
     "picture": "kasa",
     "gitlink": "https://github.com/EmySim/kasa.git",
