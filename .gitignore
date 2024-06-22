@@ -23,6 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # data json
-/.data
+data
 
-.config.js
+config.js
