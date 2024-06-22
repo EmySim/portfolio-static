@@ -18,7 +18,7 @@ function Header({ aboutRef, stackRef, realisationsRef, contactRef, showMenu = tr
   return (
     <div className="header">
       <h1 className="header-title">
-      <Link to="/Portfolio" onClick={handleTitleClick}>Emilie Simson</Link>
+      <Link to="/portfolio-static/" onClick={handleTitleClick}>Emilie Simson</Link>
       </h1>
       {showMenu && (
         <nav className="nav">

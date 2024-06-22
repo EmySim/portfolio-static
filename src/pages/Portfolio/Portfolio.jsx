@@ -9,7 +9,7 @@ import Card from "../../components/Card/Card.jsx";
 import Email from "../../components/Email/Email.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 //data json
-import projetsData from "../../data/projets.json";
+import projectsData from "../../data/projects.json";
 import profilData from "../../data/profil.json";
 import stackData from "../../data/stack.json";
 //images
@@ -85,7 +85,7 @@ const Portfolio = () => {
           <h2>Réalisations</h2>
           <div className="project-content">
             <div className="card-container">
-              {projetsData.map((projet) => (
+              {projectsData.map((projet) => (
                 <Card
                   key={projet.id}
                   title={projet.title}
@@ -93,7 +93,7 @@ const Portfolio = () => {
                   picture={projet.picture}
                   tags={projet.tags}
                   gitlink={projet.gitlink}
-                  projectlink={projet.gitlink}
+                  projectlink={projet.projectlink}
                 />
               ))}
             </div>
@@ -104,7 +104,10 @@ const Portfolio = () => {
           <h2>Contact</h2>
           <div className="contact-content">
             <div className="form-container">
-              <div className="icones-footer">
+              
+              <div className="form-background">
+                <img src={imageForm} alt="Ordinateur" />
+                <div className="icones-reseaux">
                 <a href="https://github.com/EmySim" target="_blank" rel="noopener noreferrer">
                   <img src={gitsocial} alt="GitHub" />
                 </a>
@@ -112,12 +115,11 @@ const Portfolio = () => {
                   <img src={linkedinsocial} alt="LinkedIn" />
                 </a>
               </div>
-              <div className="form-background">
-                <img src={imageForm} alt="Ordinateur" />
                 <div className="form-overlay">
                   <Email />
                 </div>
               </div>
+
             </div>
           </div>
         </div>

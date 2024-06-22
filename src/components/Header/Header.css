@@ -5,16 +5,17 @@
   margin-bottom: 30px;
   position: fixed;
   top: 0;
-  width: 100%; /* Assurez-vous que le header prend toute la largeur de la page */
-  background-color: white; /* Pour éviter que le contenu derrière soit visible */
+  width: 100%; 
+  background-color: white; 
   z-index: 1000;
+  border-bottom: 3px solid #545e84;
+  padding-bottom: 30px;
 }
 
 .header-title {
   font-family: 'Cabin Sketch';
   font-weight: 700;
   font-size: 50px;
-  font-weight: 400;
   margin: 0;
 }
 
@@ -41,33 +42,25 @@
   text-transform: uppercase;
 }
 
-.nav a:after {
-  background-color: #082ebd;
-  bottom: -5px;
+.nav a::after {
   content: "";
-  height: 2px;
-  left: 0;
   position: absolute;
-  transition: width .5s ease-out;
+  left: 0;
+  bottom: -5px;
   width: 0;
+  height: 2px;
+  background-color: #082ebd;
+  transition: width 0.5s ease-out;
 }
 
-.nav a.active,
-.nav a:hover {
-  text-decoration: underline;
-  background-color: #082ebd;
-  bottom: -5px;
-  content: "";
-  height: 2px;
-  left: 0;
-  position: absolute;
-  transition: width 0.5s ease-out;
-  width: 0;
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
 }
 
 .nav ul {
   display: flex;
-  width: 50%;
+  width: 100%;
   list-style: none;
   padding: 0;
   margin: 0;

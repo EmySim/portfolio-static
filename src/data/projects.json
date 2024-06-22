@@ -7,7 +7,6 @@
     "picture": "booki",
     "gitlink": "https://github.com/EmySim/booki.git",
     "projectlink": "https://emysim.github.io/booki/"
-    
   },
   {
     "id": "7",
@@ -15,12 +14,13 @@
     "description": "j'ai contribué à la conception du site portfolio de Sophie Bluel, architecte d'intérieur. Mon rôle en tant que développeuse front-end a impliqué la création de la page de présentation, de la page de connexion de l'administrateur, et d'une modale d'upload de médias.",
     "tags": ["HTLM", "CSS", "JS", "Swagger"],
     "picture": "sophie",
-    "gitlink": "https://github.com/EmySim/sophie-bluel.git"
+    "gitlink": "https://github.com/EmySim/sophie-bluel.git",
+    "projectlink": ""
   },
   {
     "id": "8",
     "title": "Nina Carducci",
-    "description": "J'ai proposé mes services pour l'optimisation SEO et le debuggage du site de Nina Carducci, photographe. Après avoir effectué un audit de son site, j'ai identifié des problèmes de vitesse de chargement et de structure. J'ai proposé de résoudre ces problèmes en optimisant les images et le code du site. Mon objectif était d'améliorer son référencement et d'augmenter sa visibilité.",
+    "description": "Après avoir effectué un audit du son site de Nina Carducci, photographe, identifié les problèmes de vitesse de chargement et de structure, j'ai optimisé les images et le code du site. Mon objectif était d'améliorer son référencement et la performance.",
     "tags": ["SEO", "Lighthouse", "Wave"],
     "picture": "nina",
     "gitlink": "https://github.com/EmySim/nina-carducci.git",
@@ -32,22 +32,25 @@
     "description": "J'ai travaillé avec Kasa, un leader de la location d'appartements entre particuliers en France. J'ai pris en charge la refonte totale de leur site web en utilisant React. Malgré l'absence temporaire du back-end, j'ai réussi à développer l'ensemble de l'application, les composants React, et les routes React Router en mobile first.",
     "tags": ["React", "Sass", "Mobile First"],
     "picture": "kasa",
-    "gitlink": "https://github.com/EmySim/kasa.git"
+    "gitlink": "https://github.com/EmySim/kasa.git",
+    "projectlink": ""
   },
   {
     "id": "10",
     "title": "Mon Vieux Grimoire",
-    "description": "Back-end Api Restful authentification et notation.",
+    "description": "Cette librairie en ligne développé avec Node.js, Express et MongoDB permet aux utilisateurs d'explorer, répertorier et noter leurs livres préférés. La mise en place d'un système de connexion sécurisé permet la gestion de collections de livres ainsi que le partage des avis.",
     "tags": ["NodeJS", "MongoDB", "Express"],
     "picture": "grimoire",
-    "gitlink": "https://github.com/EmySim/vieux-grimoire.git"
+    "gitlink": "https://github.com/EmySim/vieux-grimoire.git",
+    "projectlink": ""
   },
   {
     "id": "11",
     "title": "Portfolio",
-    "description": "Mise en place d'un site web .",
+    "description": "Ce projet concétise les compétences acquises lors du parcours de formation, à savoir la création et déploiement d'un site web statique. J'ai également intégré des principes de UX/UI pour optimiser la navigation et l'accessibilité du site.",
     "tags": ["Front-End", "Déploiement", "Responsive"],
     "picture": "portfolio",
-    "gitlink": "https://github.com/EmySim/portfolio-static.git"
+    "gitlink": "https://github.com/EmySim/portfolio-static.git",
+    "projectlink": ""
   }
 ]

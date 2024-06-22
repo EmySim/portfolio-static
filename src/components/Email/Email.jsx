@@ -88,7 +88,7 @@ function EmailForm() {
         <ValidationError prefix="Email" field="email" errors={state.errors} />
       </div>
 
-      <div>
+      <div className="message">
         <label htmlFor="message">Adressez moi un message</label>
         <textarea
           id="message"
@@ -103,7 +103,7 @@ function EmailForm() {
         />
       </div>
 
-      <div>
+      <div className="envoi">
         <button type="submit" disabled={state.submitting}>
           Envoyez
         </button>

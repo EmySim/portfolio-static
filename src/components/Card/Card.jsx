@@ -3,24 +3,16 @@ import "./Card.css";
 import Tag from "../Tag/Tag";
 import images from "../../assets/realisations";
 
-function Card({
-  id,
-  title,
-  picture,
-  description,
-  tags = [],
-  gitlink,
-  projectlink,
-}) {
+function Card({ id, title, picture, description, tags = [], gitlink, projectlink }) {
   const [imageSrc, setImageSrc] = useState(null);
 
   useEffect(() => {
     const loadImage = async () => {
-      const imageModule = await images[picture]?.() || images.default();
+      const imageModule = (await images[picture]?.()) || images.default();
       setImageSrc(imageModule.default);
     };
     loadImage();
-  }, [picture]);
+  }, [picture, id]);
 
   return (
     <div className="card">
@@ -30,11 +22,11 @@ function Card({
             src={imageSrc}
             alt={title}
             className="project-image"
-            loading="lazy"  // Utilisation de l'attribut lazy pour améliorer la performance
+            loading="lazy"
           />
         )}
-        <h3 className="title-overlay">{title}</h3>
         <div className="overlay">
+          <h3 className="title-overlay">{title}</h3>
           <p className="description">{description}</p>
           <div className="tag-container">
             <Tag tags={tags} />
@@ -45,13 +37,13 @@ function Card({
                 Voir le code sur GitHub
               </a>
             </button>
-            <button className="button-link">
-              {projectlink && (
+            {projectlink && (
+              <button className="button-link">
                 <a href={projectlink} target="_blank" rel="noopener noreferrer">
                   Voir le site
                 </a>
-              )}
-            </button>
+              </button>
+            )}
           </div>
         </div>
       </div>
