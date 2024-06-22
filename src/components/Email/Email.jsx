@@ -66,7 +66,11 @@ function EmailForm() {
 
   // Afficher le message de confirmation après soumission réussie
   if (state.succeeded) {
-    return <p>Votre message a bien été envoyé!</p>;
+    return (
+      <div className="confirmation-message">
+        <p>Votre message a bien été envoyé!</p>
+      </div>
+    );
   }
 
   // Afficher le formulaire tant que la soumission n'a pas réussi
