@@ -1,20 +1,13 @@
 const fs = require('fs');
-const path = require('path');
 
-// Lire les variables d'environnement
-const formspreeId = process.env.REACT_APP_FORMSPREE_ID;
-
-// Contenu du fichier config.js
-const configContent = `
 const config = {
-  formspreeId: '${formspreeId}',
+  formspreeId: process.env.REACT_APP_FORMSPREE_ID,
 };
 
-export default config;
-`;
+const configContent = `const config = ${JSON.stringify(config, null, 2)};
 
-// Écrire le fichier config.js dans le répertoire src
-const filePath = path.join(__dirname, 'src', 'config.js');
-fs.writeFileSync(filePath, configContent);
+export default config;`;
 
-console.log('Config file created successfully.');
+fs.writeFileSync('./src/config.js', configContent, 'utf8');
+
+console.log('config.js has been generated successfully.');
