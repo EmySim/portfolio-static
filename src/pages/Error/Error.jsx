@@ -12,7 +12,6 @@ function Erreur() {
         <main>
           <section id="section-principale-404">
           <Banner pageTitle="Error" />
-            
           </section>
         </main>
       </div>

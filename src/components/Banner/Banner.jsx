@@ -19,9 +19,9 @@ function Banner({ picture = banner1, pageTitle }) {
     case 'Error':
       bannerText = (
         <>
-          <p className="banner-title">Ouuups !</p>
-          <p className="banner-subtitle"> 404 - Pas trouvé</p>
-          <p className="banner-link" ><Link to="/Portfolio">Retourner sur le portfolio</Link></p>
+          <p className="banner-subtitle">Ouuups !</p>
+          <h1 className="banner-title"> 404 - Pas trouvé</h1>
+          <p className="banner-link" ><Link to="/portfolio-static/">Retourner sur le portfolio</Link></p>
         </>
       );
       break;
@@ -29,7 +29,7 @@ function Banner({ picture = banner1, pageTitle }) {
       bannerText = (
         <>
           <p className="banner-subtitle">Portfolio d'</p>
-          <p className="banner-title">EMILIE SIMSON</p>
+          <h1 className="banner-title">EMILIE SIMSON</h1>
           <p className="banner-subtitle">Développement Web Front-End</p>
         </>
       );

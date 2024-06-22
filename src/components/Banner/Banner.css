@@ -50,3 +50,23 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+.banner-title h1 {
+  color: orangered;
+  font-weight: 700;
+  line-height: 142.6%;
+  margin: 139px 0;
+}
+.banner-subtitle p {
+  color: orangered;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin: 0 0 139px;
+}
+
+.banner-link p {
+  color: orangered;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin: 0 0 139px;
+}
