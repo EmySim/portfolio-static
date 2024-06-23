@@ -11,6 +11,22 @@
   margin: 0 5%;
   padding: 30px;
 }
+@media (max-width: 768px) {
+  .profil-content,
+  .stack-content,
+  .project-content,
+  .contact-content {
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .profil-content,
+  .stack-content,
+  .project-content,
+  .contact-content {
+    padding: 15px;
+  }
+}
 
 .card-container,
 .about-container,
@@ -20,26 +36,38 @@
 
 .profil-content,
 .stack-content,
-.project-content .contact-content {
+.project-content,
+.contact-content {
   position: relative;
 }
 
 .about-container {
   display: flex;
 }
-
-.image-about-container {
+.about-container .image-about-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.image-about-container img,
-.form-picture img {
+.about-container .image-about-container img,
+.about-container .image-about-container .form-picture img {
   border-radius: 60px;
   width: 300px;
   height: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  .about-container .image-about-container img,
+  .about-container .image-about-container .form-picture img {
+    width: 250px;
+  }
+}
+@media (max-width: 480px) {
+  .about-container .image-about-container img,
+  .about-container .image-about-container .form-picture img {
+    width: 200px;
+  }
 }
 
 .card-container {
@@ -52,6 +80,12 @@
   gap: 30px;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 .sticker-container {
@@ -69,13 +103,21 @@
   position: relative;
   width: 10%;
 }
+@media (max-width: 768px) {
+  .stack-card {
+    width: 20%;
+  }
+}
+@media (max-width: 480px) {
+  .stack-card {
+    width: 30%;
+  }
+}
 
 .banner-text {
   text-align: center;
   margin-bottom: 20px;
 }
-
-/* form*/
 
 .form-container {
   display: flex;
@@ -83,18 +125,36 @@
   width: 100%;
   border-radius: 25px;
   padding: 30px;
-  margin: 0px;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .form-container {
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .form-container {
+    padding: 15px;
+  }
 }
 
 .form-content {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
   justify-content: center;
-  border-radius: 25px;
   gap: 20px;
   margin: 0 5%;
   padding: 30px;
+}
+@media (max-width: 768px) {
+  .form-content {
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .form-content {
+    padding: 15px;
+  }
 }
 
 .form-background {
@@ -104,11 +164,11 @@
   width: 100%;
   height: 500px;
 }
-
 .form-background img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 
@@ -117,14 +177,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%; /* Ajustez cette valeur en fonction de la largeur souhaitée */
+  width: 90%; /* Adjust this value based on desired width */
   max-width: 600px;
   background-color: transparent;
   border-radius: 1em;
 }
-
 .form-overlay p {
   text-align: center;
-}
-
-
+}/*# sourceMappingURL=Portfolio.css.map */
