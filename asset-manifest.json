@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.104c05dc.css",
-    "main.js": "./static/js/main.de345789.js",
+    "main.js": "./static/js/main.ac8fabf9.js",
     "static/js/858.ba2d5b02.chunk.js": "./static/js/858.ba2d5b02.chunk.js",
     "static/js/486.ce99a0d4.chunk.js": "./static/js/486.ce99a0d4.chunk.js",
     "static/js/96.30c56bcd.chunk.js": "./static/js/96.30c56bcd.chunk.js",
@@ -23,7 +23,6 @@
     "static/media/jiraicon.png": "./static/media/jiraicon.0680cd27245042af8a0a.png",
     "static/media/swaggericon.png": "./static/media/swaggericon.b94b1ca143538c2c1d60.png",
     "static/media/nodejsicon.png": "./static/media/nodejsicon.57f1722aa0d5af76c735.png",
-    "static/media/linkedinsocial.png": "./static/media/linkedinsocial.45403bbe97c75d160afc.png",
     "static/media/bookiimg.jpg": "./static/media/bookiimg.247738d5b98d742c96af.jpg",
     "static/media/reacticon.png": "./static/media/reacticon.3b5049ea7908e9da3ba0.png",
     "static/media/sassicon.png": "./static/media/sassicon.b4856dfeb58fd76614f8.png",
@@ -31,13 +30,12 @@
     "static/media/banner1.webp": "./static/media/banner1.7e6a4546b30615770e82.webp",
     "static/media/figmaicon.png": "./static/media/figmaicon.9abb5af3c700da970cd3.png",
     "static/media/jsicon.png": "./static/media/jsicon.ae35ab7f9b8e48760129.png",
-    "static/media/gitsocial.png": "./static/media/gitsocial.be8bc2e0b360721a6996.png",
     "index.html": "./index.html",
     "main.104c05dc.css.map": "./static/css/main.104c05dc.css.map",
-    "main.de345789.js.map": "./static/js/main.de345789.js.map"
+    "main.ac8fabf9.js.map": "./static/js/main.ac8fabf9.js.map"
   },
   "entrypoints": [
     "static/css/main.104c05dc.css",
-    "static/js/main.de345789.js"
+    "static/js/main.ac8fabf9.js"
   ]
 }
