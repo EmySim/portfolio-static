@@ -10,18 +10,20 @@
   background-color: white;
   z-index: 1000;
   border-bottom: 3px solid #082ebd;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 .header .header-title {
   font-family: "Cabin Sketch";
-  font-weight: 700;
+  font-weight: 400;
   font-size: 50px;
   color: #06011d;
   margin: 0;
 }
+
 .header .header-title a {
   text-decoration: none;
 }
+
 .header .nav {
   display: flex;
   width: 50%;
@@ -38,6 +40,7 @@
   text-transform: uppercase;
   padding: 10px 15px;
 }
+
 .header .nav a::after {
   content: "";
   position: absolute;
@@ -48,9 +51,12 @@
   background-color: #082ebd;
   transition: width 0.3s ease-out;
 }
-.header .nav a:hover::after, .header .nav a.active::after {
+
+.header .nav a:hover::after,
+.header .nav a.active::after {
   width: 100%;
 }
+
 .header .nav ul {
   display: flex;
   width: 100%;
@@ -64,19 +70,33 @@
 }
 @media (max-width: 768px) {
   .header {
-    flex-direction: row; 
+    flex-direction: column;
   }
+
   .header .nav {
     width: 100%;
   }
+
+  .header .nav ul {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
   .header .nav a {
     padding: 10px;
   }
 }
+
 @media (max-width: 480px) {
   .header .header-title {
     font-size: 2rem;
   }
+
+  .header .nav ul {
+    width: 100%;
+    justify-content: center;
+  }
+
   .header .nav a {
     padding: 8px;
   }

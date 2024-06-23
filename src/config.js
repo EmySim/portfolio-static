@@ -1,5 +1,5 @@
 const config = {
-    formspreeId: "xdknnael",
+    cryptedKey: "xdknnael",
   };
 
 export default config;
