@@ -4,8 +4,9 @@
   "private": true,
   "homepage": ".",
   "scripts": {
-    "start": "react-scripts start --proxy http://localhost:5000",
     "prebuild": "node create-config.js",
+    "start": "react-scripts start --proxy http://localhost:5000",
+  
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

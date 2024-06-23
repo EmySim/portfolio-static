@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "./Email.css";
 import { useForm, ValidationError } from "@formspree/react";
-import config from "../../config";
-
 
 function EmailForm() {
-  const [state, handleSubmit] = useForm(config.formspreeId);
+  const [state, handleSubmit] = useForm("xdknnael");
   const [formValues, setFormValues] = useState({
     email: "",
     message: "",
