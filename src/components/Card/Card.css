@@ -6,24 +6,28 @@
   border-radius: 25px;
   transition: transform 0.5s ease;
 }
+
 .card:hover {
   transform: translateY(-10px);
 }
+
 .card .image-container {
   position: relative;
   overflow: hidden;
   height: 100%;
 }
+
 .card .image-container .project-image {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: filter 0.3s ease;
 }
-.card:hover .card .image-container .project-image {
+
+.card:hover .image-container .project-image {
   filter: grayscale(100%) brightness(50%);
 }
+
 .card .overlay {
   position: absolute;
   bottom: 0;
@@ -39,9 +43,11 @@
   transform: translateY(100%);
   transition: transform 0.3s ease;
 }
-.card:hover .card .overlay {
+
+.card:hover .overlay {
   transform: translateY(0);
 }
+
 .card .title-overlay {
   position: absolute;
   top: 20px;
@@ -53,20 +59,24 @@
   box-sizing: border-box;
   transition: opacity 0.6s ease-out;
 }
+
 .card .description {
   text-align: center;
   margin-bottom: 10px;
 }
+
 .card .tag-container {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
+
 .card .link-container {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
 .card .button-link {
   background-color: #000;
   border: none;
@@ -79,10 +89,12 @@
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
+
 .card .button-link:hover {
   background-color: #333;
 }
+
 .card .button-link a {
   color: #fff;
   text-decoration: none;
-}/*# sourceMappingURL=Card.css.map */
+}
