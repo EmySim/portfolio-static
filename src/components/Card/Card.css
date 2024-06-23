@@ -11,28 +11,29 @@
   transform: translateY(-10px);
 }
 
-.card .image-container {
+.image-container {
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.card .image-container .project-image {
+.project-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: filter 0.5s ease;
+  transition: filter 0.3s ease;
 }
 
-.card:hover .image-container .project-image {
-  filter: grayscale(100%) brightness(50%);
+.card:hover .project-image {
+  filter: grayscale(100%);
 }
 
-.card .overlay {
+.overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  height: auto;
   color: white;
   padding: 20px;
   box-sizing: border-box;
@@ -48,36 +49,36 @@
   transform: translateY(0);
 }
 
-.card .title-overlay {
+.title-overlay {
   position: absolute;
-  top: 20px;
+  top: 20px; /* Ajuster la position verticale du titre */
   color: white;
-  font-size: 24px;
-  text-align: center;
+  font-size: 24px; /* Taille du titre */
+  text-align: center; /* Centrage du texte */
   width: 100%;
-  padding: 0 20px;
+  padding: 0 20px; /* Ajuster les marges intérieures */
   box-sizing: border-box;
   transition: opacity 0.6s ease-out;
 }
 
-.card .description {
+.description {
   text-align: center;
   margin-bottom: 10px;
 }
 
-.card .tag-container {
+.tag-container {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
 
-.card .link-container {
+.link-container {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.card .button-link {
+.button-link {
   background-color: #000;
   border: none;
   border-radius: 10px;
@@ -90,13 +91,11 @@
   transition: background-color 0.3s ease;
 }
 
-.card .button-link:hover {
+.button-link:hover {
   background-color: #333;
 }
 
-.card .button-link a {
+.button-link a {
   color: #fff;
   text-decoration: none;
 }
-
-

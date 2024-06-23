@@ -13,6 +13,14 @@ const Sticker = ({ sticker }) => {
     setHovered(false);
   };
 
+  const handleTouchStart = () => {
+    setHovered(true);
+  };
+
+  const handleTouchEnd = () => {
+    setHovered(false);
+  };
+
   const iconName = sticker.picture;
   const IconSrc = Icons[iconName];
 
@@ -21,6 +29,8 @@ const Sticker = ({ sticker }) => {
       className={`sticker ${hovered ? 'hovered' : ''}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       {IconSrc && !hovered && <img src={IconSrc} alt={`Icone ${sticker.name}`} className="icon-image" />}
       {hovered && <div className="sticker-name">{sticker.name}</div>}
